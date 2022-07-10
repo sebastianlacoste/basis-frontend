@@ -2,7 +2,7 @@
 	"name": "Basis Front-end",
 	"short_name": "Basis Front-end",
 	"description": "Sebastian Lacoste - Basis Front-end",
-	"version": "1.0",
+	"version": "1.0.0",
 	"start_url": ".",
 	"display": "standalone",
 	"orientation": "portrait-primary",
