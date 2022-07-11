@@ -1,22 +1,22 @@
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 
-import pwa from "../pwa/app";
+import RegisterSW from "../pwa/RegisterSW";
 
 const AppLayout = () => {
 	useEffect(() => {
-		pwa();
+		RegisterSW();
 	}, []);
 
 	return (
 		<>
-			<div className="w-full h-screen bg-basisFrontend-dk">
+			<div className="h-screen w-full bg-basisFrontend-dk">
 				<div
-					className="w-10 h-10 lg:w-12 lg:h-12 bg-basisFrontend-wt shadow-md hover:shadow-lg shadow-black hover:shadow-basisFrontend-wt fixed rounded-br-full 
-					ease-out duration-300 transition-all cursor-pointer githubIconAnimation"
+					className="gitHubAnimation fixed h-10 w-10 cursor-pointer rounded-br-full bg-basisFrontend-wt shadow-md shadow-black transition-all duration-300 
+					ease-out hover:shadow-lg hover:shadow-basisFrontend-wt lg:h-12 lg:w-12"
 				>
 					<a
-						href="https://github.com/sebastianlacoste"
+						href="https://github.com/sebastianlacoste/basis-frontend"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -26,7 +26,7 @@ const AppLayout = () => {
 							height="30"
 							fill="none"
 							viewBox="0 0 31 30"
-							className="hover:scale-105 left-[1px] top-[1px] lg:left-1 lg:top-1 absolute ease-out duration-300 transition-all"
+							className="absolute left-[1px] top-[1px] transition-all duration-300 ease-out hover:scale-105 lg:left-1 lg:top-1"
 						>
 							<path
 								fill="#212125"
@@ -37,7 +37,7 @@ const AppLayout = () => {
 						</svg>
 					</a>
 				</div>
-				<div className="w-full h-screen">
+				<div className="h-screen w-full">
 					<Outlet />
 				</div>
 			</div>

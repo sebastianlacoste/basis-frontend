@@ -1,9 +1,9 @@
-import Main from "../components/Main";
+import About from "../components/About";
 
 const HomePage = () => {
 	return (
-		<div className="w-full h-full flex justify-center items-center">
-			<Main />
+		<div className="flex h-full w-full items-center justify-center">
+			<About />
 		</div>
 	);
 };
