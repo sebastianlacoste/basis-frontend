@@ -6,17 +6,17 @@
 
 ---
 
-> [Basis Front-end](https://basis-frontend.sebastianlacoste.com), for a quick start of development with React and Tailwind CSS.
+> [Basis Front-end](https://basis-frontend.sebastianlacoste.com), for a quick start in development with Vite, React, Tailwind CSS, Axios, and Much more.
 
 ## Features
 
 - **Pre-Config**
 
-  - Vite
+  - **Vite**
 
     - Environment Variables
 
-  - React & React Router
+  - **React & React Router**
 
     - Project Structure
 
@@ -24,21 +24,33 @@
 
     - Browser Router
 
-  - Tailwind CSS
+  - **Tailwind CSS**
 
     - index.css
 
     - Custom Colors
 
-  - PostCSS
+  - **PostCSS**
 
-  - PWA Support
+  - **Axios**
+
+    - Custom Instance
+
+      - BaseURL ([CoinGecko API](https://www.coingecko.com/en/api))
+
+    - REQ
+
+      - GET
+
+  - **PWA Support**
 
     - manifest.json
 
     - Service Worker
 
-  - \_redirects
+  - **Netlify**
+
+    - \_redirects
 
 - **Mobile-Friendly**
 
@@ -68,13 +80,17 @@
 
     - [Autoprefixer](https://github.com/postcss/autoprefixer)
 
+  - **HTTP-Client**
+
+    - [Axios](https://github.com/axios/axios)
+
 ## Environment Variables
 
 Before running it locally, you must obtain the following values to initialize the required variables.
 
-| Variable           | Value         | Description                   |
-| :----------------- | :------------ | :---------------------------- |
-| `VITE_ENV_CONTENT` | `env-testing` | **Not/Required**. ENV Testing |
+| Variable           | Value     | Description                   |
+| :----------------- | :-------- | :---------------------------- |
+| `VITE_ENV_CONTENT` | `testing` | **Not/Required**. ENV Testing |
 
 ## Run Locally
 
@@ -110,10 +126,10 @@ Install dev/Dependencies
 
 Add Environment Variables to `.env` file
 
-- You must replace **"env-testing"** with your own values.
+- You must replace **"somevalue"** with your own values.
 
 ```bash
-  echo $'VITE_ENV_CONTENT=env-testing' >> .env
+  echo $'VITE_ENV_CONTENT=somevalue' >> .env
 ```
 
 Start the server
@@ -133,13 +149,13 @@ In the browser, go to
 - HTTPS
 
   ```bash
-  git clone https://github.com/sebastianlacoste/basis-frontend.git; cd basis-frontend/; npm i; echo $'VITE_ENV_CONTENT=env-testing' >> .env; npm run dev;
+  git clone https://github.com/sebastianlacoste/basis-frontend.git; cd basis-frontend/; npm i; echo $'VITE_ENV_CONTENT=somevalue' >> .env; npm run dev;
   ```
 
 - SSH
 
   ```bash
-  git clone git@github.com:sebastianlacoste/basis-frontend.git; cd basis-frontend/; npm i; echo $'VITE_ENV_CONTENT=env-testing' >> .env; npm run dev;
+  git clone git@github.com:sebastianlacoste/basis-frontend.git; cd basis-frontend/; npm i; echo $'VITE_ENV_CONTENT=somevalue' >> .env; npm run dev;
   ```
 
 ## Screenshots
