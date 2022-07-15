@@ -5,8 +5,8 @@ module.exports = {
 			colors: {
 				transparent: "transparent",
 				current: "currentColor",
-				"basisFrontend-wt": "#F6F6F6",
-				"basisFrontend-dk": "#212125",
+				"basisFrontend-wt": "#97989A",
+				"basisFrontend-dk": "#000000",
 			},
 		},
 	},
